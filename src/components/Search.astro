@@ -1,0 +1,106 @@
+---
+interface Props {
+  query: string;
+  onQueryChange: (query: string) => void;
+  results?: Array<{
+    title: string;
+    url: string;
+    description: string;
+  }>;
+}
+
+const { query, onQueryChange, results = [] } = Astro.props<Props>();
+---
+
+<div class="search-container">
+  <input
+    type="text"
+    class="search-input"
+    placeholder="검색..."
+    value={query}
+    oninput={(e) => onQueryChange(e.target.value)}
+  />
+  {results.length > 0 && query.length > 0 && (
+    <div class="search-results">
+      {results.map((result) => (
+        <a href={result.url} class="search-result">
+          <div class="search-result-title">{result.title}</div>
+          <div class="search-result-description">{result.description}</div>
+        </a>
+      ))}
+    </div>
+  )}
+</div>
+
+<style>
+  .search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--salmon-orange);
+    border-radius: 8px;
+    background: var(--salmon-dark);
+    color: var(--salmon-light);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--salmon-pink);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+  }
+
+  .search-input::placeholder {
+    color: var(--salmon-gray);
+  }
+
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    background: var(--salmon-dark);
+    border: 2px solid var(--salmon-orange);
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .search-result {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--salmon-orange);
+    transition: background 0.2s ease;
+    text-decoration: none;
+  }
+
+  .search-result:hover {
+    background: var(--salmon-orange);
+  }
+
+  .search-result:last-child {
+    border-bottom: none;
+  }
+
+  .search-result-title {
+    color: var(--salmon-light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .search-result-description {
+    color: var(--salmon-gray);
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+</style>
