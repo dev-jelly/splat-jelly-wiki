@@ -35,7 +35,7 @@
 - ✅ Permissions: `contents: write`
 - ✅ Build successful: `npm run build`
 - ✅ Deployment successful to gh-pages branch
-- ✅ CNAME file: `sp-wiki.octol.ink`
+- ✅ CNAME file: `sp-wiki.octol.ing`
 - ✅ .nojekyll file: Jekyll disabled
 
 ### 4. Verification & Documentation
@@ -50,26 +50,26 @@
 
 | Check | Result | Details |
 |-------|---------|---------|
-| DNS Resolution | ❌ Not Configured | `sp-wiki.octol.ink` does not resolve |
+| DNS Resolution | ❌ Not Configured | `sp-wiki.octol.ing` does not resolve |
 | CNAME Record | ❌ Missing | No record pointing to `dev-jelly.github.io` |
 | HTTP Connection | ❌ Not Accessible | Cannot connect to site via custom domain |
 | HTTPS Certificate | ❌ Not Available | Cannot verify SSL certificate |
 
 **Analysis:**
-- DNS is **not yet configured** for `sp-wiki.octol.ink`
+- DNS is **not yet configured** for `sp-wiki.octol.ing`
 - GitHub Pages is ready and serving content
 - Temporary access available at: https://dev-jelly.github.io/splat-jelly-wiki/
 - Custom domain access **not available** until DNS is configured
 
 ## ⏳ User Action Required
 
-### Task: Configure DNS for sp-wiki.octol.ink
+### Task: Configure DNS for sp-wiki.octol.ing
 
 **Estimated Time:** 5-10 minutes
 
 #### Step 1: Access DNS Provider
 
-Log in to your DNS provider where `octol.ink` domain is managed:
+Log in to your DNS provider where `octol.ing` domain is managed:
 - Cloudflare (recommended)
 - Namecheap
 - GoDaddy
@@ -114,7 +114,7 @@ Or manually verify:
 
 ```bash
 # Check DNS resolution
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 
 # Should return:
 # dev-jelly.github.io
@@ -126,7 +126,7 @@ Once DNS propagates, test the site:
 
 **Production URL:**
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 **Verification Checklist:**
@@ -158,13 +158,13 @@ bash scripts/verify-dns.sh
 **Manual Commands:**
 ```bash
 # Check DNS
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 
 # Test HTTP
-curl -I https://sp-wiki.octol.ink
+curl -I https://sp-wiki.octol.ing
 
 # Check SSL
-openssl s_client -connect sp-wiki.octol.ink:443
+openssl s_client -connect sp-wiki.octol.ing:443
 ```
 
 ## 🔄 Updating the Site
@@ -176,7 +176,7 @@ openssl s_client -connect sp-wiki.octol.ink:443
 3. Commit changes: `git add . && git commit -m "Update ..."`
 4. Push to GitHub: `git push origin main`
 5. Automatic deployment (1-2 minutes)
-6. Verify changes on https://sp-wiki.octol.ink
+6. Verify changes on https://sp-wiki.octol.ing
 
 ### Monitoring Deployment
 
@@ -201,7 +201,7 @@ Deployment is **fully complete** when:
 - [x] Site deployed to GitHub Pages
 - [ ] DNS CNAME record configured
 - [ ] DNS propagation complete
-- [ ] https://sp-wiki.octol.ink accessible
+- [ ] https://sp-wiki.octol.ing accessible
 - [ ] All 22 pages load correctly
 - [ ] HTTPS connection working
 - [ ] Search function operational
@@ -212,7 +212,7 @@ Deployment is **fully complete** when:
 
 **Check 1: DNS Propagation**
 ```bash
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 # Should return: dev-jelly.github.io
 ```
 If no result: Wait longer (up to 24 hours)
@@ -281,11 +281,11 @@ Clear browser cache and DNS cache:
 
 All deployment work from my side is **complete**. The site is deployed and ready to use.
 
-**Your only remaining task:** Configure DNS for `sp-wiki.octol.ink`
+**Your only remaining task:** Configure DNS for `sp-wiki.octol.ing`
 
 Once DNS is configured (5-10 minutes of work), your site will be live at:
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 **Start here:** [DNS_SETUP.md](./DNS_SETUP.md) - Complete DNS configuration guide

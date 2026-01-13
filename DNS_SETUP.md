@@ -1,15 +1,15 @@
-# DNS 설정 안내 - sp-wiki.octol.ink
+# DNS 설정 안내 - sp-wiki.octol.ing
 
 ## 현재 상태
 
 ✅ **GitHub Pages 배포 완료**
 - 사이트가 gh-pages 브랜치로 성공적으로 배포됨
 - 모든 22개 페이지가 포함됨
-- CNAME 파일 설정됨: `sp-wiki.octol.ink`
+- CNAME 파일 설정됨: `sp-wiki.octol.ing`
 - .nojekyll 파일로 Jekyll 비활성화됨
 
 ⏳ **DNS 설정 필요**
-- sp-wiki.octol.ink 도메인이 GitHub Pages를 가리키도록 설정 필요
+- sp-wiki.octol.ing 도메인이 GitHub Pages를 가리키도록 설정 필요
 - 현재 상태: DNS 레코드 미설정
 
 ## DNS 설정 단계
@@ -23,7 +23,7 @@ dev-jelly.github.io
 
 ### 2. DNS 레코드 추가
 
-octol.ink 도메인의 DNS 관리자에서 다음 CNAME 레코드를 추가하세요:
+octol.ing 도메인의 DNS 관리자에서 다음 CNAME 레코드를 추가하세요:
 
 | 타입 | 이름 | 값/타겟 | TTL |
 |------|------|----------|-----|
@@ -36,7 +36,7 @@ octol.ink 도메인의 DNS 관리자에서 다음 CNAME 레코드를 추가하�
 Cloudflare Dashboard에서:
 
 1. [Cloudflare Dashboard](https://dash.cloudflare.com) 접속
-2. `octol.ink` 도메인 선택
+2. `octol.ing` 도메인 선택
 3. **DNS** → **Records** 이동
 4. **Add Record** 클릭:
    - Type: `CNAME`
@@ -49,7 +49,7 @@ Cloudflare Dashboard에서:
 #### 옵션 B: Namecheap
 
 1. Namecheap Dashboard 접속
-2. Domain List → octol.ink → **Manage**
+2. Domain List → octol.ing → **Manage**
 3. **Advanced DNS** 탭
 4. **Add New Record**:
    - Type: `CNAME Record`
@@ -61,7 +61,7 @@ Cloudflare Dashboard에서:
 #### 옵션 C: GoDaddy
 
 1. GoDaddy Dashboard 접속
-2. My Products → octol.ink → **DNS Management**
+2. My Products → octol.ing → **DNS Management**
 3. **Add** 버튼:
    - Type: `CNAME`
    - Name: `sp-wiki`
@@ -77,18 +77,18 @@ DNS 레코드가 전파되는 데 5분~24시간 소요될 수 있습니다.
 
 **macOS/Linux:**
 ```bash
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 ```
 
 **Windows:**
 ```cmd
-nslookup sp-wiki.octol.ink
+nslookup sp-wiki.octol.ing
 ```
 
 **예상 출력:**
 ```
 ; ANSWER SECTION:
-sp-wiki.octol.ink.  3600  IN  CNAME  dev-jelly.github.io.
+sp-wiki.octol.ing.  3600  IN  CNAME  dev-jelly.github.io.
 ```
 
 ### 5. 도메인 확인 (GitHub)
@@ -96,7 +96,7 @@ sp-wiki.octol.ink.  3600  IN  CNAME  dev-jelly.github.io.
 GitHub에서 도메인 소유권을 확인합니다:
 
 1. [GitHub Repository Settings](https://github.com/dev-jelly/splat-jelly-wiki/settings/pages) 접속
-2. Pages 섹션에서 `sp-wiki.octol.ink`가 표시되는지 확인
+2. Pages 섹션에서 `sp-wiki.octol.ing`가 표시되는지 확인
 3. 상태가 `Active`로 변경될 때까지 기다림
 4. 필요한 경우 GitHub에서 제공하는 DNS 확인 TXT 레코드를 추가
 
@@ -106,7 +106,7 @@ DNS가 설정되고 전파된 후 다음 URL에서 사이트 접속 가능:
 
 **프로덕션 URL:**
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 **GitHub Pages 대체 URL (DNS 전파 전):**
@@ -123,7 +123,7 @@ https://dev-jelly.github.io/splat-jelly-wiki/
 - [ ] TTL 설정됨 (3600 또는 Auto)
 
 ### 사이트 접속
-- [ ] https://sp-wiki.octol.ink 접속 가능
+- [ ] https://sp-wiki.octol.ing 접속 가능
 - [ ] 홈페이지 정상 로딩
 - [ ] 네비게이션 사이드바 표시
 - [ ] 모든 페이지 접근 가능 (22개 페이지)
@@ -132,7 +132,7 @@ https://dev-jelly.github.io/splat-jelly-wiki/
 
 ### GitHub Pages 상태
 - [ ] GitHub Pages status: Active
-- [ ] Custom domain: sp-wiki.octol.ink
+- [ ] Custom domain: sp-wiki.octol.ing
 - [ ] DNS checks passed
 - [ ] Build status: Latest deployment successful
 
@@ -148,7 +148,7 @@ ERR_NAME_NOT_RESOLVED 또는 NXDOMAIN
 **해결:**
 1. DNS 레코드가 올바르게 설정되었는지 확인
 2. DNS 전파 대기 (5분~24시간)
-3. 다음 명령어로 전파 확인: `dig sp-wiki.octol.ink`
+3. 다음 명령어로 전파 확인: `dig sp-wiki.octol.ing`
 4. 브라우저 캐시 삭제 및 DNS 캐시 플러시
 
 ### GitHub Pages 상태가 "Errored"
@@ -223,7 +223,7 @@ https://github.com/dev-jelly/splat-jelly-wiki/settings/pages
 
 1. ✅ DNS 레코드 올바르게 설정
 2. ✅ DNS 전파 완료 (dig/nslookup로 확인)
-3. ✅ https://sp-wiki.octol.ink 접속 가능
+3. ✅ https://sp-wiki.octol.ing 접속 가능
 4. ✅ GitHub Pages status: Active
 5. ✅ HTTPS 연결 작동 (보안 잠금장 아이콘)
 6. ✅ 모든 22개 페이지 정상 로딩

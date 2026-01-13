@@ -24,7 +24,7 @@ Your site is deployed and ready. The only remaining step is DNS configuration.
 
 3. **Access Your Site**
    ```
-   https://sp-wiki.octol.ink
+   https://sp-wiki.octol.ing
    ```
 
 ---
@@ -86,7 +86,7 @@ bash scripts/verify-dns.sh
 
 **Checklist:**
 - [ ] DNS resolves to dev-jelly.github.io
-- [ ] https://sp-wiki.octol.ink loads
+- [ ] https://sp-wiki.octol.ing loads
 - [ ] All pages accessible
 - [ ] HTTPS working
 - [ ] Search function works
@@ -99,7 +99,7 @@ bash scripts/verify-dns.sh
 
 ### Production (After DNS Setup)
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 ### Temporary (Currently Available)
@@ -189,7 +189,7 @@ git push origin main
 
 **1. Check DNS**
 ```bash
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 ```
 Should return: `dev-jelly.github.io`
 
@@ -257,7 +257,7 @@ Deployment is fully complete when:
 3. ✅ Documentation provided
 4. ✅ Verification tools available
 5. [ ] DNS configured by user
-6. [ ] Site accessible at https://sp-wiki.octol.ink
+6. [ ] Site accessible at https://sp-wiki.octol.ing
 
 **Current Status:** 5/6 complete (83%)
 
@@ -277,7 +277,7 @@ bash scripts/verify-dns.sh
 
 **3. Go Live**
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 ---

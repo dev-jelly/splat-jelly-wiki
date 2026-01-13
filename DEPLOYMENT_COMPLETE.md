@@ -13,14 +13,14 @@
 - ✅ 한국어 네비게이션 구성
 - ✅ 검색 기능 (Pagefind) 활성화
 - ✅ 사이트맵 자동 생성
-- ✅ 사이트 URL 설정: `https://sp-wiki.octol.ink`
+- ✅ 사이트 URL 설정: `https://sp-wiki.octol.ing`
 
 ### 3. 배포 시스템
 - ✅ GitHub Actions 워크플로우 구성
 - ✅ GitHub Pages 배포 워크플로우 수정
   - `peaceiris/actions-gh-pages@v3` 사용
   - `contents: write` 권한 추가
-  - CNAME 설정: `sp-wiki.octol.ink`
+  - CNAME 설정: `sp-wiki.octol.ing`
 - ✅ GitHub Pages gh-pages 브랜치로 성공적 배포
 - ✅ 사이트 내용 확인 완료:
   - index.html 생성
@@ -38,10 +38,10 @@
 
 ### 1. DNS 설정 (필수)
 
-GitHub Pages 사이트는 이미 배포되었으나, `sp-wiki.octol.ink` 도메인을 사용하기 위해 DNS 설정이 필요합니다.
+GitHub Pages 사이트는 이미 배포되었으나, `sp-wiki.octol.ing` 도메인을 사용하기 위해 DNS 설정이 필요합니다.
 
 **단계:**
-1. octol.ink 도메인의 DNS 관리자 접속
+1. octol.ing 도메인의 DNS 관리자 접속
 2. CNAME 레코드 추가:
    - **Type:** CNAME
    - **Name:** sp-wiki
@@ -57,15 +57,15 @@ DNS 레코드 전파 시간: **5분 ~ 24시간**
 **확인 방법:**
 ```bash
 # macOS/Linux
-dig sp-wiki.octol.ink
+dig sp-wiki.octol.ing
 
 # Windows
-nslookup sp-wiki.octol.ink
+nslookup sp-wiki.octol.ing
 ```
 
 예상 출력:
 ```
-sp-wiki.octol.ink.  3600  IN  CNAME  dev-jelly.github.io.
+sp-wiki.octol.ing.  3600  IN  CNAME  dev-jelly.github.io.
 ```
 
 ## 📊 현재 배포 상태
@@ -77,7 +77,7 @@ sp-wiki.octol.ink.  3600  IN  CNAME  dev-jelly.github.io.
 | 빌드 | ✅ 성공 | 최신 커밋 d9aa225 |
 | 브랜치 | ✅ gh-pages | 성공적으로 생성됨 |
 | 사이트 내용 | ✅ 정상 | 22개 페이지 포함 |
-| CNAME 설정 | ✅ 완료 | sp-wiki.octol.ink |
+| CNAME 설정 | ✅ 완료 | sp-wiki.octol.ing |
 | HTTPS | ⏳ 대기 | DNS 설정 후 자동 활성화 |
 | Custom Domain | ⏳ 대기 | DNS 레코드 전파 필요 |
 
@@ -110,7 +110,7 @@ sp-wiki.octol.ink.  3600  IN  CNAME  dev-jelly.github.io.
 
 **프로덕션 URL:**
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 ⚠️ 현재 DNS 설정 전이라 접속 불가. DNS 설정을 완료하세요.
@@ -122,14 +122,14 @@ https://sp-wiki.octol.ink
 https://dev-jelly.github.io/splat-jelly-wiki/
 ```
 
-참고: 이 URL은 `sp-wiki.octol.ink`로 자동 리다이렉트됩니다.
+참고: 이 URL은 `sp-wiki.octol.ing`로 자동 리다이렉트됩니다.
 
 ## 📋 배포 검증 체크리스트
 
 DNS 설정이 완료된 후 다음을 확인하세요:
 
 ### 접속 테스트
-- [ ] https://sp-wiki.octol.ink 접속 가능
+- [ ] https://sp-wiki.octol.ing 접속 가능
 - [ ] 홈페이지 정상 로딩
 - [ ] HTTPS 연결 (보안 잠금장 아이콘)
 
@@ -236,7 +236,7 @@ https://github.com/dev-jelly/splat-jelly-wiki/settings/pages
 
 1. ✅ DNS 레코드 설정 완료
 2. ✅ DNS 전파 완료
-3. ✅ https://sp-wiki.octol.ink 접속 가능
+3. ✅ https://sp-wiki.octol.ing 접속 가능
 4. ✅ 모든 22개 페이지 접근 가능
 5. ✅ 검색 기능 정상 작동
 6. ✅ 네비게이션 사이드바 작동

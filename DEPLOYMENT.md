@@ -13,7 +13,7 @@
 
 배포 아키텍처:
 ```
-GitHub Repository → GitHub Actions → Miniflare Cluster → sp-wiki.octol.ink
+GitHub Repository → GitHub Actions → Miniflare Cluster → sp-wiki.octol.ing
 ```
 
 ## 단계 1: GitHub 리포지토리 생성
@@ -67,11 +67,11 @@ GitHub Actions 워크플로우(`.github/workflows/build-deploy.yml`)는 다음 �
 5. Miniflare CLI 설치(`npm install -g miniflare`)
 6. Miniflare 클러스터에 배포(`miniflare deploy --env=production`)
 
-## 단계 6: DNS 설정 (octol.ink)
+## 단계 6: DNS 설정 (octol.ing)
 
 ### 옵션 A: 미니플레어 관리 도메인
 
-octol.ink이 이미 Miniflare에 있는 경우:
+octol.ing이 이미 Miniflare에 있는 경우:
 
 1. Miniflare Dashboard 접속
 2. 해당 클러스터의 DNS 설정
@@ -84,7 +84,7 @@ octol.ink이 이미 Miniflare에 있는 경우:
 
 ### 옵션 B: 외부 도메인
 
-octol.ink이 외부 레지스트라에 있는 경우:
+octol.ing이 외부 레지스트라에 있는 경우:
 
 1. 레지스트라 관리 패널 접속
 2. CNAME 레코드 추가:
@@ -139,8 +139,8 @@ GitHub에 푸시하면 자동으로 배포가 시작됩니다:
 
 - 전파 시간: 보통 5-30분
 - 확인 방법:
-  - macOS/Linux: `dig sp-wiki.octol.ink`
-  - Windows: `nslookup sp-wiki.octol.ink`
+  - macOS/Linux: `dig sp-wiki.octol.ing`
+  - Windows: `nslookup sp-wiki.octol.ing`
 
 ### 배포 실패
 
@@ -183,7 +183,7 @@ miniflare deploy dist --env=production
 
 - GitHub: 무료 (공개 리포지토리)
 - Miniflare 클러스터: 기존 사용 중
-- 도메인: octol.ink (기존 소유)
+- 도메인: octol.ing (기존 소유)
 - **총 비용**: 0원/월
 
 ## 추가 리소스

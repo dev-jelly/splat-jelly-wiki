@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
-export default defineConfig({
-	site: 'https://sp-wiki.octol.ink',
+	export default defineConfig({
+	site: 'https://sp-wiki.octol.ing',
 	integrations: [
 		starlight({
 			title: 'Splat Jelly Wiki',

@@ -34,7 +34,7 @@ All deployment work that can be performed programmatically is **COMPLETE**. The 
 - [x] GitHub Actions workflow configured
 - [x] Automated build process (npm run build)
 - [x] Automatic deployment to gh-pages branch
-- [x] CNAME file created: sp-wiki.octol.ink
+- [x] CNAME file created: sp-wiki.octol.ing
 - [x] Jekyll disabled (.nojekyll file)
 - [x] Deployed successfully to GitHub Pages
 
@@ -64,7 +64,7 @@ All deployment work that can be performed programmatically is **COMPLETE**. The 
 - This task MUST be performed by you, the domain owner
 
 **Action Required:**
-1. Log in to your DNS provider where octol.ink is managed
+1. Log in to your DNS provider where octol.ing is managed
 2. Add CNAME record:
    - **Type:** CNAME
    - **Name/Host:** sp-wiki
@@ -91,7 +91,7 @@ bash scripts/verify-dns.sh
 
 **Expected Results:**
 - DNS resolves to dev-jelly.github.io
-- https://sp-wiki.octol.ink is accessible
+- https://sp-wiki.octol.ing is accessible
 - All 22 pages load correctly
 - HTTPS connection is active
 - Search function works
@@ -130,7 +130,7 @@ bash scripts/verify-dns.sh
 
 ### Production URL (After DNS Setup)
 ```
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 **Current Status:** DNS not configured - not yet accessible
 
@@ -138,7 +138,7 @@ https://sp-wiki.octol.ink
 ```
 https://dev-jelly.github.io/splat-jelly-wiki/
 ```
-**Current Status:** ✅ Accessible (auto-redirects to sp-wiki.octol.ink)
+**Current Status:** ✅ Accessible (auto-redirects to sp-wiki.octol.ing)
 
 ### Repository URLs
 - **Repository:** https://github.com/dev-jelly/splat-jelly-wiki
@@ -201,7 +201,7 @@ GitHub Pages (gh-pages branch)
     ↓
 https://dev-jelly.github.io/splat-jelly-wiki/
     ↓ [after DNS setup]
-https://sp-wiki.octol.ink
+https://sp-wiki.octol.ing
 ```
 
 ---
@@ -251,17 +251,17 @@ https://sp-wiki.octol.ink
 **1. Configure DNS**
 - Open: DNS_SETUP.md
 - Follow step-by-step instructions
-- Add CNAME record for sp-wiki.octol.ink
+- Add CNAME record for sp-wiki.octol.ing
 
 **2. Verify Configuration**
 - Wait 5 minutes - 24 hours for DNS propagation
 - Run: `bash scripts/verify-dns.sh`
-- Check: https://sp-wiki.octol.ink
+- Check: https://sp-wiki.octol.ing
 
 ### After DNS Setup (1-2 minutes)
 
 **3. Final Verification**
-- [ ] Site loads at https://sp-wiki.octol.ink
+- [ ] Site loads at https://sp-wiki.octol.ing
 - [ ] All 22 pages accessible
 - [ ] HTTPS working (lock icon)
 - [ ] Search function works
