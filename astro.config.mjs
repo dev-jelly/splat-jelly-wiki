@@ -8,19 +8,19 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Splat Jelly Wiki',
-			description: '스플래툰 3 연어런 공략 & 번역 사이트',
+			description: '스플래툰 3 새먼 런 공략 & 번역 사이트',
 			lastUpdated: true,
 			customCss: ['./src/styles/custom.css'],
 			sidebar: [
 				{
-					label: '연어런 가이드',
+					label: '새먼 런 가이드',
 					items: [
 						{ label: '홈 (기본 룰)', link: '/' },
 						{ label: '고급 테크닉', link: '/guides/techniques/' },
 						{ label: '연어의 종류', items: [
 							{ label: '적 목록', link: '/enemies/' },
-							{ label: '대물 연어 공략', link: '/enemies/boss-salmon/' },
-							{ label: '일반 연어 가이드', link: '/enemies/small-fry/' },
+							{ label: '거물 연어 공략', link: '/enemies/boss-salmon/' },
+							{ label: '조무래기 연어 가이드', link: '/enemies/small-fry/' },
 						]},
 						{ label: '무기 및 기어', link: '/weapons/' },
 						{ label: '특수 상황', link: '/special-situations/' },
@@ -43,13 +43,13 @@ export default defineConfig({
 				{
 					label: '빅 런 스테이지 (이벤트)',
 					items: [
-						{ label: '스메시 월드', link: '/stages/wahoo-world/' },
+						{ label: '초밥 월드', link: '/stages/wahoo-world/' },
 						{ label: '해녀 미술 대학', link: '/stages/inkblot-art-academy/' },
-						{ label: '마테가이 방수로', link: '/stages/undertow-spillway/' },
-						{ label: '남플러 유적', link: '/stages/umami-ruins/' },
-						{ label: '타라포트 쇼핑 파크', link: '/stages/barnacle-and-dime/' },
-						{ label: '곤즈이 지구', link: '/stages/eeltail-alley/' },
-						{ label: '카지키 공항', link: '/stages/crableg-capital/' },
+						{ label: '맛조개 방수로', link: '/stages/undertow-spillway/' },
+						{ label: '남플라 유적', link: '/stages/umami-ruins/' },
+						{ label: '대구 포트 쇼핑 파크', link: '/stages/barnacle-and-dime/' },
+						{ label: '메기 지구', link: '/stages/eeltail-alley/' },
+						{ label: '대치 시장', link: '/stages/crableg-capital/' },
 					],
 				},
 			],
