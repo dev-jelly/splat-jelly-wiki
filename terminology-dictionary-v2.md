@@ -17,11 +17,17 @@
 | :--- | :--- | :--- |
 | Spawning Grounds | **셰케나 댐** | |
 | Sockeye Station | **아라마키 요새** | |
-| Gone Fission Hydroplant | **무니 엘 해양 발전소** | |
-| Marooner's Bay | **난파선 돈 브라코** | |
+| Gone Fission Hydroplant | **무니・엘 해양 발전소** | |
+| Marooner's Bay | **난파선 돈・브라코** | |
 | Salmonid Smokeyard | **토키라즈 이부시 공방** | |
 | Jammin' Salmon Junction | **스지코 정션 터** | |
 | Bonerattle Arena | **돈피코 투기장** | |
+| Wahoo World | **스메시 월드** | 빅 런 |
+| Inkblot Art Academy | **해녀 미술 대학** | 빅 런 |
+| Undertow Spillway | **마테가이 방수로** | 빅 런 |
+| Um'ami Ruins | **남플러 유적** | 빅 런 |
+| Barnacle & Dime | **타라포트 쇼핑 파크** | 빅 런 |
+| Eeltail Alley | **곤즈이 지구** | 빅 런 |
 
 ## 👾 대물 연어 및 두목 연어 (Boss & King Salmonids)
 
