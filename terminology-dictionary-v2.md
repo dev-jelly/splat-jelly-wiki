@@ -11,6 +11,18 @@
 4. **일본어 독음 최소화**: 인게임 고유 명사(연어 이름 등)에만 최소한으로 독음을 표기하며, 일반 메뉴명에서는 제거합니다.
 5. **표준어 기반 기술**: 가이드는 친절한 **해요체**를 사용하여 작성합니다.
 
+## 🗺️ 공식 스테이지 명칭 (Official Stages)
+
+| 영어 명칭 | 공식 한국어 명칭 | 비고 |
+| :--- | :--- | :--- |
+| Spawning Grounds | **셰케나 댐** | |
+| Sockeye Station | **아라마키 요새** | |
+| Gone Fission Hydroplant | **무니 엘 해양 발전소** | |
+| Marooner's Bay | **난파선 돈 브라코** | |
+| Salmonid Smokeyard | **토키라즈 이부시 공방** | |
+| Jammin' Salmon Junction | **스지코 정션 터** | |
+| Bonerattle Arena | **돈피코 투기장** | |
+
 ## 👾 대물 연어 및 두목 연어 (Boss & King Salmonids)
 
 | 공식 한국어 명칭 | 권장 명칭 (커뮤니티) | 영어 명칭 | 일본어 독음 | 비고 |
