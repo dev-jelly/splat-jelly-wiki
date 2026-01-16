@@ -16,6 +16,7 @@ export default defineConfig({
 					label: '연어런 가이드',
 					items: [
 						{ label: '홈 (기본 룰)', link: '/' },
+						{ label: '고급 테크닉', link: '/guides/techniques/' },
 						{ label: '연어의 종류', items: [
 							{ label: '적 목록', link: '/enemies/' },
 							{ label: '대물 연어 공략', link: '/enemies/boss-salmon/' },
