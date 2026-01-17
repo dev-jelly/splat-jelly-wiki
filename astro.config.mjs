@@ -40,7 +40,7 @@ export default defineConfig({
 				},
 				{
 					tag: 'meta',
-					attrs: { property: 'og:image', content: 'https://sp-wiki.octol.ing/og-main.png' },
+					attrs: { property: 'og:image', content: 'https://sp-wiki.octol.ing/images/enemies/flyfish.png' },
 				},
 				{
 					tag: 'meta',
@@ -48,7 +48,7 @@ export default defineConfig({
 				},
 				{
 					tag: 'meta',
-					attrs: { name: 'twitter:image', content: 'https://sp-wiki.octol.ing/og-main.png' },
+					attrs: { name: 'twitter:image', content: 'https://sp-wiki.octol.ing/images/enemies/flyfish.png' },
 				},
 				{
 					tag: 'meta',
