@@ -15,39 +15,39 @@ const searchIndex = [
     description: "새먼 런 스테이지 - Spawning Grounds"
   },
   {
-    title: "아라마키 요새",
+    title: "연어말이 요새",
     url: "/stages/sockeye-station/",
     description: "새먼 런 스테이지 - Sockeye Station"
   },
   {
-    title: "무니 엘 해양 발전소",
+    title: "뫼니 엘 해양 발전소",
     url: "/stages/gone-fission-hydroplant/",
     description: "새먼 런 스테이지 - Gone Fission Hydroplant"
   },
   {
-    title: "난파선 돈 브라코",
+    title: "난파선 돈・브라코",
     url: "/stages/marooners-bay/",
     description: "새먼 런 스테이지 - Marooner's Bay"
   },
   {
-    title: "스지코 정션 터",
+    title: "연어알젓 교차로 옛터",
     url: "/stages/jammin-salmon-junction/",
     description: "새먼 런 스테이지 - Jammin' Salmon Junction"
   },
   {
-    title: "토키라즈 이부시 공방",
+    title: "사계절 훈제 공방",
     url: "/stages/salmonid-smokeyard/",
     description: "새먼 런 스테이지 - Salmonid Smokeyard"
   },
   {
-    title: "돈피코 투기장",
+    title: "연어 심장 투기장",
     url: "/stages/bonerattle-arena/",
     description: "새먼 런 스테이지 - Bonerattle Arena"
   },
   {
     title: "거물 연어 공략",
     url: "/enemies/boss-salmon/",
-    description: "폭탄, 어깨 패드, 철판, 뱀, 타워, 두더지, 박쥐, 기둥, 다이버, 냄비 뚜껑, 철 구슬 공략"
+    description: "폭탄, 어깨패드, 철판, 뱀, 타워, 두더지, 박쥐, 기둥, 다이버, 냄비 뚜껑, 철 구슬 공략"
   },
   {
     title: "두목 연어 공략",
@@ -57,7 +57,7 @@ const searchIndex = [
   {
     title: "특수 상황 공략",
     url: "/special-situations/",
-    description: "빛파리(러시), 안개, 그릴 발진, 운반함 급습, 진흙연어 분출, 거대 회오리 등 특수 웨이브"
+    description: "빛파리, 안개, 그릴, 운반함 급습, 진흙연어 분출, 거대 회오리 등 특수 웨이브"
   },
   {
     title: "무기 및 기어",
