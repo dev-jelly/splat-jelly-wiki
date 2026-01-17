@@ -1,21 +1,22 @@
 export default {
-  content: ["./src/content/**/*.{md,mdx}"],
+  content: ["./src/content/**/*.{md,mdx}", "./src/components/**/*.{astro,tsx}"],
   theme: {
     extend: {
       colors: {
         salmon: {
-          orange: '#ff7300',
-          pink: '#ff69b4',
-          green: '#00cc44',
-          yellow: '#ffcc00',
-          blue: '#0077ff',
-          purple: '#9966ff',
-          red: '#ff4444',
-          bg: '#f5f5f5'
+          primary: '#ff7300',
+          secondary: '#ff5033',
+          accent: '#b2ff00',
+          cyan: '#00f5ff',
+          dark: '#0f172a',
+          light: '#f8fafc'
         }
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
       }
     }
   },
-  darkMode: 'class',
-  darkMode: 'media'
+  darkMode: 'class'
 }

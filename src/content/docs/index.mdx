@@ -14,37 +14,43 @@ head:
 hero:
   tagline: 스플래툰 3 새먼 런 완벽 공략 가이드 (전문 데이터 포함)
   actions:
-    - text: 스테이지 공략
+    - text: 시작하기
       link: /stages/
       icon: right-arrow
-    - text: 거물 연어 처치법
-      link: /enemies/
-      icon: right-arrow
-    - text: 무기 및 기어
-      link: /weapons/
-      icon: right-arrow
+      variant: primary
+    - text: GitHub 저장소
+      link: https://github.com/dev-jelly/splat-jelly-wiki
+      icon: external
 ---
 
-# 새먼 런 NEXT WAVE 기본 가이드
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-:::caution[저작권 및 비공식 안내]
-본 사이트는 **Nintendo**의 '스플래툰 3'를 기반으로 한 **비공식 가이드**입니다. 
-일본의 'Splatoon3믹스 위키' 데이터를 참고하여 제작되었으며, 모든 콘텐츠의 저작권은 **Nintendo**에 있습니다.
+# <span class="gradient-text">Salmon Run NEXT WAVE</span>
+
+:::caution[비공식 안내]
+본 사이트는 **Nintendo**의 '스플래툰 3'를 기반으로 한 **비공식 가이드**입니다. 모든 콘텐츠의 저작권은 **Nintendo**에 있습니다.
 :::
 
-안녕하세요, 아르바이터 여러분! 스플래툰 3의 협동 모드인 새먼 런 NEXT WAVE에 오신 것을 환영해요. 이곳은 몰려오는 연어들을 물리치고 황금 연어알을 모으는 즐거운(?) 직장입니다.
+안녕하세요, 아르바이터 여러분! **Mr. 베어 상회**에 오신 것을 환영합니다. 이곳은 몰려오는 연어들을 물리치고 황금 연어알을 모으는 고수익(?) 직장입니다.
 
-## 아르바이트 개요
-
-새먼 런의 목표는 제한 시간 내에 **황금 연어알**을 목표 수량만큼 모아서 **컨테이너**에 납품하는 것이에요.
-
-*   **참여 방법**: 카오폴리스 타운의 로비 오른쪽, 붉은 문이 있는 **「Mr. 베어 상회」**를 방문하세요.
-*   **연수 (켄슈)**: 처음 오셨다면 Mr. 베어의 안내에 따라 튜토리얼을 받아야 해요. 기본적인 조작과 거물 연어 처치법을 배울 수 있답니다.
-*   **보상**: 모은 연어알에 따라 'Mr. 베어 포인트'를 얻고, 이를 통해 기어 파워 파편, 돈, 음식 티켓 등을 받을 수 있어요.
+<CardGrid stagger>
+  <Card title="스테이지 공략" icon="pencil">
+    각 맵의 지형지물과 밀물/썰물 시의 핵심 포지션을 확인하세요. [자세히 보기](/stages/)
+  </Card>
+  <Card title="거물 연어 처치법" icon="add-document">
+    폭탄, 뱀, 타워 등 까다로운 거물 연어들의 약점과 최적의 공략법을 전수합니다. [자세히 보기](/enemies/boss-salmon/)
+  </Card>
+  <Card title="무기 데이터" icon="setting">
+    지급되는 무기들의 정확한 DPS와 사거리를 파악하여 효율적으로 대처하세요. [자세히 보기](/weapons/)
+  </Card>
+  <Card title="고급 테크닉" icon="rocket">
+    익스플로셔 활용법, 이쿠라 던지기 등 전설 등급을 위한 필수 기술들입니다. [자세히 보기](/guides/techniques/)
+  </Card>
+</CardGrid>
 
 ---
 
-## 아르바이트 시스템 (수치 데이터)
+## 📈 아르바이트 시스템
 
 더 높은 등급으로 올라가기 위해 필요한 기술적인 정보들을 정리해 보았어요.
 
@@ -55,8 +61,6 @@ hero:
 
 ---
 
-
 ## 📚 관련 정보 및 출처
 *   **원본 공략**: [새먼 런 NEXT WAVE 개요 (wikiwiki.jp)](https://wikiwiki.jp/splatoon3mix/%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%A9%E3%83%B3)
 *   **데이터 출처**: Splatoon3믹스 위키 (スプラトゥーン3 攻略＆検証 Wiki*)
-*   **저작권**: 모든 게임 관련 자산의 권리는 Nintendo에 있습니다.
